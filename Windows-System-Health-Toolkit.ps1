@@ -5,7 +5,7 @@
 # Works directly from a saved .ps1 file. For irm | iex, start PowerShell as
 # Administrator, or replace $ToolkitSourceUrl after publishing the script.
 # ============================================================================
-$ToolkitSourceUrl = "https://REPLACE-WITH-YOUR-DIRECT-RAW-URL"
+$ToolkitSourceUrl = "https://raw.githubusercontent.com/T3ND41/windows-system-toolkit/refs/heads/main/Windows-System-Health-Toolkit.ps1"
 
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 if (-not $isAdmin) {
